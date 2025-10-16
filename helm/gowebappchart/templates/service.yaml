@@ -1,0 +1,17 @@
+---
+# https://kubernetes.io/docs/concepts/services-networking/service/#multi-port-services
+apiVersion: v1
+kind: Service
+metadata:
+  name: gowebapp-s
+  labels:
+    app: gowebapp
+spec:
+  selector:
+    app: gowebapp
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 8080
+  type: ClusterIP
+    
