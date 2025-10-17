@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: gowebapp
-        image: rextor/gowebapp:{{ .Values.image.tag }}
+        image: rextor/go-web-app:{{ .Values.image.tag }}
         ports:
         - containerPort: 8080
